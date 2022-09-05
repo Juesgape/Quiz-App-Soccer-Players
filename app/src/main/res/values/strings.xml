@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Quiz app soccer players</string>
+    <string name="juesgape">Juesgape</string>
+    <string name="bienvenidx">Bienvenidx</string>
+    <string name="ingrese_su_nombre">Ingrese su nombre</string>
+    <string name="jugar">Jugar</string>
+    <string name="name">Name</string>
+    <string name="stadiumabackground">stadiumaBackground</string>
+    <string name="nombre">Nombre</string>
 </resources>
