@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_question" type="id" />
+    <item name="iv_image" type="id" />
+    <item name="tv_option_one" type="id" />
+    <item name="tv_option_two" type="id" />
+    <item name="tv_option_three" type="id" />
+    <item name="btn_sumbit" type="id" />
+</resources>

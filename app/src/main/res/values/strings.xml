@@ -7,4 +7,6 @@
     <string name="name">Name</string>
     <string name="stadiumabackground">stadiumaBackground</string>
     <string name="nombre">Nombre</string>
+    <string name="continuar">Continuar</string>
+    <string name="nombre_del_jugador">Nombre del jugador</string>
 </resources>

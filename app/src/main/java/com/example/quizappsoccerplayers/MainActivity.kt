@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Debes proveer un nombre", Toast.LENGTH_SHORT).show()
 
             } else {
-                startActivity(Intent(this,Questionquiz::class.java)
+                startActivity(Intent(this,QuizQuestion::class.java)
                     .putExtra("username", getName.text.toString()))
                 finish()
             }

@@ -7,7 +7,7 @@ object Constants {
 
         val que1 = Question(
             1,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.messi,
             "Messi",
             "James",
@@ -19,7 +19,7 @@ object Constants {
 
         val que2 = Question(
             2,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.halaand,
             "Maradona",
             "Iniesta",
@@ -31,7 +31,7 @@ object Constants {
 
         val que3 = Question(
             3,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.kante,
             "Ter Stegen",
             "Kanté",
@@ -43,7 +43,7 @@ object Constants {
 
         val que4 = Question(
             4,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.bicho,
             "El bicho/comandante",
             "Falcao",
@@ -55,7 +55,7 @@ object Constants {
 
         val que5 = Question(
             5,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.courtois,
             "Manuel Neuer",
             "Courtois",
@@ -67,7 +67,7 @@ object Constants {
 
         val que6 = Question(
             6,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.debruyne,
             "De Bruyne",
             "Sergio Busquéts",
@@ -79,7 +79,7 @@ object Constants {
 
         val que7 = Question(
             7,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.mbape,
             "Pedri",
             "Luís Suarez",
@@ -91,7 +91,7 @@ object Constants {
 
         val que8 = Question(
             8,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.neymar,
             "Neymar Jr",
             "Sterling",
@@ -103,7 +103,7 @@ object Constants {
 
         val que9 = Question(
             9,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.son,
             "Kim Young",
             "Son",
@@ -115,7 +115,7 @@ object Constants {
 
         val que10 = Question(
             10,
-            "¿Cuál es el nombre del jugador?",
+            "¿Quién es el jugador?",
             R.drawable.dimaria,
             "Ángel Di Maria",
             "De Paul",
