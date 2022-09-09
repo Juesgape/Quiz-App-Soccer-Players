@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         btnJugar.setOnClickListener {
             if (getName.text.toString().isEmpty()) {
                 getName.setError("Error")
-                Toast.makeText(this, "Debes proveer un nombre", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Debes ingresar un nombre", Toast.LENGTH_SHORT).show()
 
             } else {
                 startActivity(Intent(this,QuizQuestion::class.java)

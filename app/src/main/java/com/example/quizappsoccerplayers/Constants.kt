@@ -48,7 +48,7 @@ object Constants {
             "El bicho/comandante",
             "Falcao",
             "Neymar",
-            3
+            1
         )
 
         questionsList.add(que4)

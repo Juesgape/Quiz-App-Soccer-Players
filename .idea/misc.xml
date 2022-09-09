@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Desktop/AndroidStudioProjects/Quizappsoccerplayers/app/src/main/res/drawable-v24/correct_option_button.xml" value="0.1685" />
+        <entry key="..\:/Users/Desktop/AndroidStudioProjects/Quizappsoccerplayers/app/src/main/res/drawable-v24/wrong_option_button.xml" value="0.1685" />
         <entry key="..\:/Users/Desktop/AndroidStudioProjects/Quizappsoccerplayers/app/src/main/res/drawable/defaul_option_button.xml" value="0.1" />
         <entry key="..\:/Users/Desktop/AndroidStudioProjects/Quizappsoccerplayers/app/src/main/res/drawable/layout_bg.xml" value="0.172" />
         <entry key="..\:/Users/Desktop/AndroidStudioProjects/Quizappsoccerplayers/app/src/main/res/drawable/selected_option_border.xml" value="0.1895" />

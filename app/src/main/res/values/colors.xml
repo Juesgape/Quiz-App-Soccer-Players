@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#CFCFCF</color>
     <color name="questions">#EACF7E</color>
+    <color name="correct">#AEFFA5</color>
+    <color name="wrong">#F10D68</color>
 </resources>
