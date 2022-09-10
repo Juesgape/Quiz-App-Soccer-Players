@@ -1,5 +1,6 @@
 package com.example.quizappsoccerplayers
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -16,10 +17,14 @@ class QuizQuestion : AppCompatActivity(), View.OnClickListener {
     private var mCurrentPosition:Int = 1
     private var mQuestionList:ArrayList<Question>? = null
     private var mSelectedOptionPosition:Int = 0
+    private var mCorrectAnswers: Int = 0
+    private var mUserName: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_questionquiz)
+
+        mUserName = intent.getStringExtra(Constants.USER_NAME)
 
         //Finding elements by ID
         val tv_option_one = findViewById<TextView>(R.id.tv_option_one)
@@ -94,7 +99,7 @@ class QuizQuestion : AppCompatActivity(), View.OnClickListener {
         val tv_option_three = findViewById<TextView>(R.id.tv_option_three)
         val btn_submit = findViewById<Button>(R.id.btn_submit)
 
-        when(v?.id) {
+        when (v?.id) {
             R.id.tv_option_one -> {
                 selectedOptionView(tv_option_one, 1)
             }
@@ -105,35 +110,37 @@ class QuizQuestion : AppCompatActivity(), View.OnClickListener {
                 selectedOptionView(tv_option_three, 3)
             }
             R.id.btn_submit -> {
-                if(mSelectedOptionPosition == 0) {
-                    Toast.makeText(this, "Debes elegir una opción", Toast.LENGTH_SHORT).show()
-                } else {
+                if (mSelectedOptionPosition == 0) {
+                    mCurrentPosition++
 
-                    if(mSelectedOptionPosition != 0) {
-                        mCurrentPosition++
-
-                        when{
-                            mCurrentPosition <= mQuestionList!!.size -> {
-                                setQuestion()
-                            } else -> {
-                            Toast.makeText(this, "Haz completado el quiz!!", Toast.LENGTH_SHORT).show()
+                    when {
+                        mCurrentPosition <= mQuestionList!!.size -> {
+                            setQuestion()
                         }
+                        else -> {
+                            val intent = Intent(this, ResultQuiz::class.java)
+                            intent.putExtra(Constants.USER_NAME, mUserName)
+                            intent.putExtra(Constants.CORRECT_ANSWERS, mCorrectAnswers)
+                            intent.putExtra(Constants.TOTAL_QUESTIONS, mQuestionList!!.size)
+                            startActivity(intent)
+                            finish()
                         }
-                    }else {
-                        val question = mQuestionList?.get(mCurrentPosition - 1)
-                        if(question!!.correctAnswer != mSelectedOptionPosition) {
-                            answerView(mSelectedOptionPosition, R.drawable.wrong_option_button)
-                        }
-                        answerView(question.correctAnswer, R.drawable.correct_option_button)
-
-                        if(mCurrentPosition == mQuestionList!!.size) {
-                            btn_submit.text = "Validar"
-                        } else {
-                            btn_submit.text = "Siguiente"
-                        }
-                        mSelectedOptionPosition = 0
-
                     }
+                } else {
+                    val question = mQuestionList?.get(mCurrentPosition - 1)
+                    if (question!!.correctAnswer != mSelectedOptionPosition) {
+                        answerView(mSelectedOptionPosition, R.drawable.wrong_option_button)
+                    } else {
+                        mCorrectAnswers++
+                    }
+                    answerView(question.correctAnswer, R.drawable.correct_option_button)
+
+                    if (mCurrentPosition == mQuestionList!!.size) {
+                        btn_submit.text = "Validar"
+                    } else {
+                        btn_submit.text = "Siguiente"
+                    }
+                    mSelectedOptionPosition = 0
 
                 }
 

@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
             } else {
                 startActivity(Intent(this,QuizQuestion::class.java)
-                    .putExtra("username", getName.text.toString()))
+                    .putExtra(Constants.USER_NAME, getName.text.toString()))
                 finish()
             }
         }
