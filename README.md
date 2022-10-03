@@ -2,4 +2,4 @@
 
 This is my first app developed with Kotlin!!
 
-![IMG-20220925-WA0001](https://user-images.githubusercontent.com/97264721/192153818-da90b573-b03a-4704-9215-20a2b304f6e4.jpg)
+![quiz-soccer-app](https://user-images.githubusercontent.com/97264721/193650612-4b6a99e5-ebec-4ad8-9fb9-3c281de9bb47.jpg)
